@@ -3,5 +3,5 @@ export const action = {
     Increment: 'INCREMENT',
     Decrement: 'DECREMENT',
     Reset: 'RESET'
-};
+}
 
