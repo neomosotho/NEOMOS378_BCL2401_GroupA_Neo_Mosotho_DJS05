@@ -1,8 +1,9 @@
-import { initialState } from "./initialState";
-import { action } from "./action";
 
-export function reducer (state = initialState, action) {
-    switch (action, type) {
+import { initialState } from './initialState.js';
+import { action } from './action.js';
+
+export function reducer (state = initialState, actions) {
+    switch (actions, type) {
         case action.INCREMENT:
             return {count: state.count + 1};
         case action.DECREMENT:

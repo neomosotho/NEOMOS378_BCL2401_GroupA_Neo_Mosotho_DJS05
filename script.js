@@ -1,7 +1,7 @@
 //Importing 'reducer' and 'action' files
-import { action } from "./action";
-import { reducer } from "./reducer";
-import {createStore} from "./store.js";
+import { action } from './action.js';
+import { reducer } from './reducer.js';
+import { createStore } from './store.js';
 
 // creating the store
 const store = createStore(reducer);
