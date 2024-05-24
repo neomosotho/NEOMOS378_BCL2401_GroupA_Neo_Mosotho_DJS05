@@ -13,7 +13,6 @@ console.log(store.getState());
 //console.loging Scenario 2
 console.log('Scenario 2: Incrementing the counter');
 store.dispatch({ type: action.Increment });
-// store.dispatch({ type: action.DECREMENT});
 console.log(store.getState());
 
 //console.loging Scenario 3
