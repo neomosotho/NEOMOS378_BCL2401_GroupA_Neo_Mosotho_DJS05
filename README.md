@@ -61,7 +61,7 @@ Reset Counter: Reset the count to 0.
 State Logging: Log state changes to the console for visibility.
 
 ## Challenges
-I experienced challenges whereby the state counts were not displaying in the order that they should have. But I managed to fix that. 
+I experienced challenges whereby the state counts were not displaying in the order that they should have. But I managed to fix that. I added another dispatch for increment in scenario 2.
 
 ## Running of the code
 So intead of running the code in the live server on the console, I added a file called 'package.json'. This file enables me to read my console in the terminal, which is easier and quicker.
