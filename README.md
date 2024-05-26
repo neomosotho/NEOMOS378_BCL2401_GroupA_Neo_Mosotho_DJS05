@@ -1,9 +1,10 @@
 # DJS05 Project Brief: Building a Redux-Inspired Store for a Tally App
 
-In this challenge, you will venture into the realm of state management by constructing a Redux-inspired store to manage the state of a simple Tally App. Your primary goal is to manage the app's state changes efficiently, focusing on core functionalities like incrementing, decrementing, and resetting a counter. Instead of rendering changes on the UI, you'll subscribe to state updates and log them to the console, highlighting the power of state management in applications.
+## Overview
+This project demonstrates the creation of a simple Tally App using a Redux-inspired store to manage its state. The core functionalities include incrementing, decrementing, and resetting a counter. Instead of rendering changes on a UI, the app logs them to the console to effectively demonstrate state management.
 
 ## Objective
-Create a minimalistic, Redux-inspired store to manage and log the state of a counting Tally App. Your implementation will not involve UI rendering; instead, it will use console logs to demonstrate state management effectively.
+The primary objective is to build a minimalistic, Redux-inspired store that handles and logs state changes of a counting Tally App. This exercise aims to illustrate the power and flexibility of state management in applications.
 
 Observer Pattern resource from Refactoring Guru: https://refactoring.guru/design-patterns/observer
 
@@ -53,17 +54,14 @@ THEN the state should display a count of 0
 - **No UI Rendering**: This challenge focuses on state management without the complexity of UI rendering. All state changes should be observable through console logs.
 - **Functional Programming Principles**: Draw upon functional programming concepts as illustrated in the reference videos. While Redux is the inspiration, you're encouraged to apply these principles creatively in your implementation.
 
-## Submission Guidelines
-Your submission should consist of a JavaScript file(s) that encapsulate your Redux-inspired store and the logic for dispatching actions and subscribing to changes. Include a README.md file explaining:
-- How to run your code.
-- A brief overview of your approach.
-- Any challenges you faced and how you overcame them.
+## Features
+Increment Counter: Increase the count by 1.
+Decrement Counter: Decrease the count by 1.
+Reset Counter: Reset the count to 0.
+State Logging: Log state changes to the console for visibility.
 
-Ensure your code is well-commented and adheres to best practices for readability and maintainability.
+## Challenges
+I experienced challenges whereby the state counts were not displaying in the order that they should have. But I managed to fix that. 
 
-## Evaluation Criteria
-- **Correctness**: Your implementation should correctly handle the scenarios as outlined in the user stories.
-- **Code Quality**: Use of functional programming principles, clear naming conventions, and code organization.
-- **Documentation**: Clarity of your approach and reflections in the README.md.
-
-This challenge is an excellent opportunity to demonstrate your understanding of state management concepts and functional programming principles. Good luck!
+## Running of the code
+So intead of running the code in the live server on the console, I added a file called 'package.json'. This file enables me to read my console in the terminal, which is easier and quicker.

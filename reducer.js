@@ -4,7 +4,7 @@ import { action } from './action.js';
 
 //Exporting reducer function
 export function reducer (state = initialState, actions) {
-    switch (actions, type) {
+    switch (actions.type) {
         case action.Increment:
             return {count: state.count + 1};
         case action.Decrement:

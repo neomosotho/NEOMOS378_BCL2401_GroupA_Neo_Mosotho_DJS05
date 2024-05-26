@@ -1,11 +1,12 @@
+//Exporting createStore function
 export function createStore(reducer) {
     let state = reducer(undefined, {});
-    const listeners = {};
+    const listeners = [];
 
     return {
         dispatch(action) {
             state = reducer(state, action);
-            listeners.forEach(listeners => listeners());
+            listeners.forEach(listener => listener());
         },
         getState() {
             return state;
@@ -16,6 +17,6 @@ export function createStore(reducer) {
                 const index = listeners.indexof(listener);
                 listeners.splice(index, 1);
             };
-        },    
-    };
+        },    
+    };
 }
